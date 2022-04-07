@@ -2,9 +2,15 @@
 
 本章节用于记录红蓝对抗中的技巧点笔记
 
-## Github相关
+## 应急
 
-### 获取Github用户的个人信息
+
+
+## 溯源
+
+### Github相关
+
+#### 获取Github用户的邮箱信息
 
 1. patch文件
 
@@ -16,4 +22,32 @@
 
    ![](G:\ired.team\Notes\img\Blueteam002.png)
 
-2. 
+2. git log日志
+
+   首先将需要溯源的github仓库clone到本地，然后输入`git log`即可获取邮箱：
+
+   ![](G:\ired.team\Notes\img\Blueteam003.png)
+
+3. Github-Email：
+
+   Github用户信息收集工具：https://github.com/paulirish/github-email
+
+### 社工信息收集相关
+
+1. TG社工库机器人
+
+2. 个人域名的备案信息
+
+   [360威胁情报中心](https://ti.360.net/#/homepage)
+
+   [站长之家](http://whois.chinaz.com/)
+
+3. IP地址精准定位
+
+   https://chaipip.com/aiwen.html
+
+### 恶意文件分析
+
+​	1.[微步](https://s.threatbook.cn/)
+
+​	2.[哈勃](https://habo.qq.com/)
