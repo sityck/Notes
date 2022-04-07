@@ -1,0 +1,429 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Nday漏洞利用 · Takio‘s Blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Takio">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"Takio","repo":"Blog","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    JAVA代码审计
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    WEB安全
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    APP安全
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    云原生安全
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    CTF
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    域渗透
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    红蓝攻防
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="Nday.html">
+            
+                <a href="Nday.html">
+            
+                    
+                    Nday漏洞利用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    Linux提权
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="dirtycow.html">
+            
+                <a href="dirtycow.html">
+            
+                    
+                    脏牛漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Nday漏洞利用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;"><b></b>Nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5927;&#x7EB2;"><b></b>&#x5927;&#x7EB2;</a></li><ul><li><span class="title-icon "></span><a href="#linux&#x63D0;&#x6743;"><b></b>Linux&#x63D0;&#x6743;</a></li><li><span class="title-icon "></span><a href="#&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;"><b></b>&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;"><b></b>&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;</a></li></ul></ul></ul></div><a href="#nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;"><a name="nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;" class="anchor-navigation-ex-anchor" href="#nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;" class="plugin-anchor" href="#nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>Nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;</h1>
+<hr>
+<p>&#x672C;&#x7AE0;&#x8282;&#x7528;&#x4E8E;&#x5B58;&#x653E;Nday&#x6F0F;&#x6D1E;&#x7684;&#x5229;&#x7528;POC/EXP</p>
+<h2 id="&#x5927;&#x7EB2;"><a name="&#x5927;&#x7EB2;" class="anchor-navigation-ex-anchor" href="#&#x5927;&#x7EB2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5927;&#x7EB2;" class="plugin-anchor" href="#&#x5927;&#x7EB2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5927;&#x7EB2;</h2>
+<h3 id="linux&#x63D0;&#x6743;"><a name="linux&#x63D0;&#x6743;" class="anchor-navigation-ex-anchor" href="#linux&#x63D0;&#x6743;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="linux&#x63D0;&#x6743;" class="plugin-anchor" href="#linux&#x63D0;&#x6743;"><i class="fa fa-link" aria-hidden="true"></i></a>Linux&#x63D0;&#x6743;</h3>
+<h4 id="&#x810F;&#x725B;"><a name="&#x810F;&#x725B;" class="anchor-navigation-ex-anchor" href="#&#x810F;&#x725B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x810F;&#x725B;" class="plugin-anchor" href="#&#x810F;&#x725B;"><i class="fa fa-link" aria-hidden="true"></i></a><a href="dirtycow.html">&#x810F;&#x725B;</a></h4>
+<h3 id="&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;"><a name="&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;" class="anchor-navigation-ex-anchor" href="#&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;" class="plugin-anchor" href="#&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;</h3>
+<h4 id="&#x5FAE;&#x4FE1;"><a name="&#x5FAE;&#x4FE1;" class="anchor-navigation-ex-anchor" href="#&#x5FAE;&#x4FE1;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5FAE;&#x4FE1;" class="plugin-anchor" href="#&#x5FAE;&#x4FE1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAE;&#x4FE1;</h4>
+<h4 id="&#x9489;&#x9489;"><a name="&#x9489;&#x9489;" class="anchor-navigation-ex-anchor" href="#&#x9489;&#x9489;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9489;&#x9489;" class="plugin-anchor" href="#&#x9489;&#x9489;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9489;&#x9489;</h4>
+<h3 id="&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;"><a name="&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;" class="plugin-anchor" href="#&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Nday漏洞利用","level":"1.9","depth":1,"next":{"title":"Linux提权","level":"1.9.1","depth":2,"ref":"","articles":[{"title":"脏牛漏洞","level":"1.9.1.1","depth":3,"path":"Nday/dirtycow.md","ref":"Nday/dirtycow.md","articles":[]}]},"previous":{"title":"红蓝攻防","level":"1.8","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","chapter-fold","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/sityck"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Takio","repo":"Blog","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Takio","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Takio‘s Blog","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"Nday/Nday.md","mtime":"2022-02-11T13:42:28.114Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-07T13:19:58.970Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
