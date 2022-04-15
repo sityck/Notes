@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Nday漏洞利用 · Takio‘s Blog</title>
+        <title>红队技巧 · Takio‘s Blog</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,8 +69,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Blueteam.html" />
     
-    <link rel="prev" href="../HW/Blueteam.html" />
+    
+    <link rel="prev" href="HW.html" />
     
 
     
@@ -218,9 +220,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../HW/HW.html">
+        <li class="chapter " data-level="1.8" data-path="HW.html">
             
-                <a href="../HW/HW.html">
+                <a href="HW.html">
             
                     
                     红蓝攻防
@@ -232,9 +234,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../HW/RedTeam.html">
+        <li class="chapter active" data-level="1.8.1" data-path="RedTeam.html">
             
-                <a href="../HW/RedTeam.html">
+                <a href="RedTeam.html">
             
                     
                     红队技巧
@@ -245,9 +247,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../HW/Blueteam.html">
+        <li class="chapter " data-level="1.8.2" data-path="Blueteam.html">
             
-                <a href="../HW/Blueteam.html">
+                <a href="Blueteam.html">
             
                     
                     蓝队技巧
@@ -263,9 +265,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="Nday.html">
+        <li class="chapter " data-level="1.9" data-path="../Nday/Nday.html">
             
-                <a href="Nday.html">
+                <a href="../Nday/Nday.html">
             
                     
                     Nday漏洞利用
@@ -291,9 +293,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1.1" data-path="dirtycow.html">
+        <li class="chapter " data-level="1.9.1.1" data-path="../Nday/dirtycow.html">
             
-                <a href="dirtycow.html">
+                <a href="../Nday/dirtycow.html">
             
                     
                     脏牛漏洞
@@ -357,7 +359,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Nday漏洞利用</a>
+        <a href=".." >红队技巧</a>
     </h1>
 </div>
 
@@ -372,17 +374,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;"><b></b>Nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5927;&#x7EB2;"><b></b>&#x5927;&#x7EB2;</a></li><ul><li><span class="title-icon "></span><a href="#linux&#x63D0;&#x6743;"><b></b>Linux&#x63D0;&#x6743;</a></li><li><span class="title-icon "></span><a href="#&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;"><b></b>&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;"><b></b>&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;</a></li></ul></ul></ul></div><a href="#nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;"><a name="nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;" class="anchor-navigation-ex-anchor" href="#nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;" class="plugin-anchor" href="#nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>Nday&#x6F0F;&#x6D1E;&#x5229;&#x7528;</h1>
-<hr>
-<p>&#x672C;&#x7AE0;&#x8282;&#x7528;&#x4E8E;&#x5B58;&#x653E;Nday&#x6F0F;&#x6D1E;&#x7684;&#x5229;&#x7528;POC/EXP</p>
-<p>&#x4E3B;&#x8981;&#x7528;&#x9014;&#x8FD8;&#x662F;&#x5728;&#x4E8E;&#x7EA2;&#x84DD;&#x5BF9;&#x6297;&#x5DE5;&#x4F5C;&#xFF0C;&#x5185;&#x90E8;&#x7814;&#x53D1;&#x5B89;&#x5168;&#x7684;&#x5EFA;&#x8BBE;&#x548C;&#x5B9E;&#x8DF5;&#x8FD8;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;&#x5BF9;&#x5B89;&#x5168;&#x914D;&#x7F6E;&#x3001;&#x4EE3;&#x7801;&#x51FD;&#x6570;&#x3001;&#x5E38;&#x89C1;&#x4E0D;&#x5B89;&#x5168;&#x673A;&#x5236;&#x7684;&#x63A2;&#x7D22;</p>
-<h2 id="&#x5927;&#x7EB2;"><a name="&#x5927;&#x7EB2;" class="anchor-navigation-ex-anchor" href="#&#x5927;&#x7EB2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5927;&#x7EB2;" class="plugin-anchor" href="#&#x5927;&#x7EB2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5927;&#x7EB2;</h2>
-<h3 id="linux&#x63D0;&#x6743;"><a name="linux&#x63D0;&#x6743;" class="anchor-navigation-ex-anchor" href="#linux&#x63D0;&#x6743;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="linux&#x63D0;&#x6743;" class="plugin-anchor" href="#linux&#x63D0;&#x6743;"><i class="fa fa-link" aria-hidden="true"></i></a>Linux&#x63D0;&#x6743;</h3>
-<h4 id="&#x810F;&#x725B;"><a name="&#x810F;&#x725B;" class="anchor-navigation-ex-anchor" href="#&#x810F;&#x725B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x810F;&#x725B;" class="plugin-anchor" href="#&#x810F;&#x725B;"><i class="fa fa-link" aria-hidden="true"></i></a><a href="dirtycow.html">&#x810F;&#x725B;</a></h4>
-<h3 id="&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;"><a name="&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;" class="anchor-navigation-ex-anchor" href="#&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;" class="plugin-anchor" href="#&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x804A;&#x5929;&#x8F6F;&#x4EF6;&#x6F0F;&#x6D1E;</h3>
-<h4 id="&#x5FAE;&#x4FE1;"><a name="&#x5FAE;&#x4FE1;" class="anchor-navigation-ex-anchor" href="#&#x5FAE;&#x4FE1;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5FAE;&#x4FE1;" class="plugin-anchor" href="#&#x5FAE;&#x4FE1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAE;&#x4FE1;</h4>
-<h4 id="&#x9489;&#x9489;"><a name="&#x9489;&#x9489;" class="anchor-navigation-ex-anchor" href="#&#x9489;&#x9489;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9489;&#x9489;" class="plugin-anchor" href="#&#x9489;&#x9489;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9489;&#x9489;</h4>
-<h3 id="&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;"><a name="&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;" class="plugin-anchor" href="#&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x89C1;&#x672A;&#x6388;&#x6743;&#x6F0F;&#x6D1E;</h3>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7EA2;&#x961F;&#x6280;&#x5DE7;"><b></b>&#x7EA2;&#x961F;&#x6280;&#x5DE7;</a></li><ul><li><span class="title-icon "></span><a href="#&#x793E;&#x5DE5;&#x9493;&#x9C7C;"><b></b>&#x793E;&#x5DE5;&#x9493;&#x9C7C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9493;&#x9C7C;&#x6587;&#x4EF6;"><b></b>&#x9493;&#x9C7C;&#x6587;&#x4EF6;</a></li></ul></ul></ul></div><a href="#&#x7EA2;&#x961F;&#x6280;&#x5DE7;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7EA2;&#x961F;&#x6280;&#x5DE7;"><a name="&#x7EA2;&#x961F;&#x6280;&#x5DE7;" class="anchor-navigation-ex-anchor" href="#&#x7EA2;&#x961F;&#x6280;&#x5DE7;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7EA2;&#x961F;&#x6280;&#x5DE7;" class="plugin-anchor" href="#&#x7EA2;&#x961F;&#x6280;&#x5DE7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EA2;&#x961F;&#x6280;&#x5DE7;</h1>
+<p>&#x672C;&#x7AE0;&#x8282;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x7EA2;&#x84DD;&#x5BF9;&#x6297;&#x4E2D;&#x7684;&#x6280;&#x5DE7;&#x70B9;&#x7B14;&#x8BB0;</p>
+<h2 id="&#x793E;&#x5DE5;&#x9493;&#x9C7C;"><a name="&#x793E;&#x5DE5;&#x9493;&#x9C7C;" class="anchor-navigation-ex-anchor" href="#&#x793E;&#x5DE5;&#x9493;&#x9C7C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x793E;&#x5DE5;&#x9493;&#x9C7C;" class="plugin-anchor" href="#&#x793E;&#x5DE5;&#x9493;&#x9C7C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x793E;&#x5DE5;&#x9493;&#x9C7C;</h2>
+<h3 id="&#x9493;&#x9C7C;&#x6587;&#x4EF6;"><a name="&#x9493;&#x9C7C;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x9493;&#x9C7C;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x9493;&#x9C7C;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x9493;&#x9C7C;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9493;&#x9C7C;&#x6587;&#x4EF6;</h3>
+<h4 id="&#x6DF7;&#x6DC6;&#x6587;&#x4EF6;&#x540D;"><a name="&#x6DF7;&#x6DC6;&#x6587;&#x4EF6;&#x540D;" class="anchor-navigation-ex-anchor" href="#&#x6DF7;&#x6DC6;&#x6587;&#x4EF6;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6DF7;&#x6DC6;&#x6587;&#x4EF6;&#x540D;" class="plugin-anchor" href="#&#x6DF7;&#x6DC6;&#x6587;&#x4EF6;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DF7;&#x6DC6;&#x6587;&#x4EF6;&#x540D;</h4>
+<p>&#x5728;Windows&#x4E2D;&#xFF0C;U+202E&#x5B57;&#x7B26;&#x4E3A;RLO&#x63A7;&#x5236;&#x7B26;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x540E;&#x9762;&#x7684;&#x5B57;&#x7B26;&#x53CD;&#x8F6C;&#x663E;&#x793A;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x5F71;&#x54CD;&#x5B9E;&#x9645;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;<code>hackpiz.exe</code>&#xFF0C;&#x5728;piz&#x4E4B;&#x524D;&#x63D2;&#x5165;RLO&#x5B57;&#x7B26;&#xFF0C;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x4F1A;&#x88AB;&#x663E;&#x793A;&#x4E3A;<code>hackexe.zip</code>&#xFF0C;&#x6210;&#x4E3A;&#x4E86;&#x770B;&#x8D77;&#x6765;&#x4EBA;&#x755C;&#x65E0;&#x5BB3;&#x7684;&#x538B;&#x7F29;&#x5305;&#x6587;&#x4EF6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x53CC;&#x51FB;&#x8BE5;&#x6587;&#x4EF6;&#x4ECD;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;EXE&#x6587;&#x4EF6;&#x6267;&#x884C;&#x3002;</p>
+<blockquote>
+<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x9700;&#x8981;&#x5728;&#x540C;&#x4E00;&#x884C;&#x624D;&#x80FD;&#x88AB;&#x5168;&#x90E8;&#x53CD;&#x8F6C;&#xFF0C;RLO&#x5B57;&#x7B26;&#x53EA;&#x4F5C;&#x7528;&#x4E8E;&#x672C;&#x884C;</p>
+</blockquote>
+<p>&#x5982;&#x4F55;&#x63D2;&#x5165;RLO&#x5B57;&#x7B26;&#xFF1F;&#x9996;&#x5148;&#x9009;&#x62E9;&#x91CD;&#x547D;&#x540D;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x8F93;&#x5165;&#x6846;&#x5904;&#x53F3;&#x952E;&#x9F20;&#x6807;&#xFF0C;&#x9009;&#x62E9;&#x63D2;&#x5165;&#x63A7;&#x5236;&#x5B57;&#x7B26;-&gt;RLO&#x5B57;&#x7B26;&#x5373;&#x53EF;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Redteam001.png" alt=""></p>
 
                                 
                                 </section>
@@ -410,10 +413,14 @@
 
             
                 
-                <a href="../HW/Blueteam.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 蓝队技巧">
+                <a href="HW.html" class="navigation navigation-prev " aria-label="Previous page: 红蓝攻防">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Blueteam.html" class="navigation navigation-next " aria-label="Next page: 蓝队技巧">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -422,7 +429,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Nday漏洞利用","level":"1.9","depth":1,"next":{"title":"Linux提权","level":"1.9.1","depth":2,"ref":"","articles":[{"title":"脏牛漏洞","level":"1.9.1.1","depth":3,"path":"Nday/dirtycow.md","ref":"Nday/dirtycow.md","articles":[]}]},"previous":{"title":"蓝队技巧","level":"1.8.2","depth":2,"path":"HW/Blueteam.md","ref":"HW/Blueteam.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","chapter-fold","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/sityck"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Takio","repo":"Blog","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Takio","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Takio‘s Blog","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"Nday/Nday.md","mtime":"2022-04-10T07:11:33.020Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-15T11:39:31.717Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"红队技巧","level":"1.8.1","depth":2,"next":{"title":"蓝队技巧","level":"1.8.2","depth":2,"path":"HW/Blueteam.md","ref":"HW/Blueteam.md","articles":[]},"previous":{"title":"红蓝攻防","level":"1.8","depth":1,"path":"HW/HW.md","ref":"HW/HW.md","articles":[{"title":"红队技巧","level":"1.8.1","depth":2,"path":"HW/RedTeam.md","ref":"HW/RedTeam.md","articles":[]},{"title":"蓝队技巧","level":"1.8.2","depth":2,"path":"HW/Blueteam.md","ref":"HW/Blueteam.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","chapter-fold","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/sityck"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Takio","repo":"Blog","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Takio","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Takio‘s Blog","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"HW/RedTeam.md","mtime":"2022-04-15T11:37:22.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-15T11:39:31.717Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

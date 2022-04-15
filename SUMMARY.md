@@ -8,7 +8,7 @@
 * [CTF](CTF/CTF.md)
 * [域渗透](DOMAIN/Domain.md)
 * [红蓝攻防](HW/HW.md)
-  * 红队技巧
+  * [红队技巧](HW/RedTeam.md)
   * [蓝队技巧](HW/Blueteam.md)
 
 * [Nday漏洞利用](Nday/Nday.md)
