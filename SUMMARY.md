@@ -6,7 +6,7 @@
 * [APP安全](APP/APPSec.md)
 * [云原生安全](Cloud/CloudSec.md)
 * [CTF](CTF/CTF.md)
-* [域渗透](DOMAIL/Domain.d)
+* [域渗透](DOMAIN/Domain.md)
 * [红蓝攻防](HW/HW.md)
   * 红队技巧
   * [蓝队技巧](HW/Blueteam.md)
