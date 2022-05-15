@@ -6,7 +6,6 @@
 * [APP安全](APP/APPSec.md)
 * [云原生安全](Cloud/CloudSec.md)
   * [容器逃逸](Cloud/PODSec.md)
-
 * [CTF](CTF/CTF.md)
 * [域渗透](DOMAIN/Domain.md)
 * [红蓝攻防](HW/HW.md)
@@ -16,4 +15,9 @@
   * Linux提权
     * [脏牛漏洞](Nday/dirtycow.md)
 * [隐私保护-数据安全](Legal/Legal.md)
+* [甲方安全](Legal/OwnerSec.md)
+  * [安全运营](Legal/operation.md)
+  * [安全管理](Legal/manage.md)
+  * [安全研发](Legal/SecDevops.md)
+
 
