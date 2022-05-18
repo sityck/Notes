@@ -76,3 +76,6 @@ int *a = NULL;
 return 0;}
 ```
 
+### 任意挂载的情况
+
+当用户可以调用API进行任意挂载时，可以使用--volume /:/host、--pid=host、--net=host等配置来打破容器与宿主机的资源隔离。
