@@ -4,6 +4,28 @@
 
 ## 已知漏洞逃逸
 
+### 内核漏洞
+
+#### 1、[脏牛漏洞（CVE-2016-5195）](..\Nday\dirtycow.md)
+
+攻击者可以借助该漏洞向vDSO区域写入恶意代码，从而实现容器逃逸。
+
+### Docker漏洞
+
+1. CVE-2019-14271：加载不受信任的动态链接库
+
+   影响版本：已在[19.03.1](https://docs.docker.com/engine/release-notes/#19031)版的Docker中被修复
+
+   漏洞原理：事实上是因为宿主机在调用docker cp命令时，通过未容器化的docker-tar组件加载容器内部的nsswitch动态链接库，从而导致在容器内实现对宿主机的命令注入。
+
+2. CVE-2019-5736
+
+   影响版本：Docker版本 < 18.09.2 或者使用 runc版本 <= 1.0-rc6的环境
+
+   漏洞详情：Docker、containerd或者其他基于runc的[容器](https://cloud.tencent.com/product/tke?from=10680)运行时存在安全漏洞，攻击者可以通过特定的[容器镜像](https://cloud.tencent.com/product/tcr?from=10680)或者exec操作可以获取到[宿主机](https://cloud.tencent.com/product/cdh?from=10680)的runc执行时的文件句柄并修改掉runc的二进制文件，从而获取到宿主机的root执行权限（诱导宿主机用户操作容器启动操作）。利用完会导致容器不可用。 
+
+3. 
+
 
 
 ## 不安全配置导致的逃逸

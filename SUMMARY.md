@@ -4,6 +4,9 @@
 * [JAVA代码审计](JAVACode/JavaCode.md)
 * [WEB安全](WEB/WEBSec.md)
 * [APP安全](APP/APPSec.md)
+* [逆向](IDA/IDA.md)
+  * [破解010Editor](IDA/010Editor.md)
+
 * [云原生安全](Cloud/CloudSec.md)
   * [容器逃逸](Cloud/PODSec.md)
 * [CTF](CTF/CTF.md)
@@ -19,5 +22,4 @@
   * [安全运营](Legal/operation.md)
   * [安全管理](Legal/manage.md)
   * [安全研发](Legal/SecDevops.md)
-
 

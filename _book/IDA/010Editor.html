@@ -1,0 +1,666 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>破解010Editor · Takio‘s Blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Takio">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Cloud/CloudSec.html" />
+    
+    
+    <link rel="prev" href="IDA.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"Takio","repo":"Blog","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../JAVACode/JavaCode.html">
+            
+                <a href="../JAVACode/JavaCode.html">
+            
+                    
+                    JAVA代码审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../WEB/WEBSec.html">
+            
+                <a href="../WEB/WEBSec.html">
+            
+                    
+                    WEB安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../APP/APPSec.html">
+            
+                <a href="../APP/APPSec.html">
+            
+                    
+                    APP安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="IDA.html">
+            
+                <a href="IDA.html">
+            
+                    
+                    逆向
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="010Editor.html">
+            
+                <a href="010Editor.html">
+            
+                    
+                    破解010Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Cloud/CloudSec.html">
+            
+                <a href="../Cloud/CloudSec.html">
+            
+                    
+                    云原生安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Cloud/PODSec.html">
+            
+                <a href="../Cloud/PODSec.html">
+            
+                    
+                    容器逃逸
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../CTF/CTF.html">
+            
+                <a href="../CTF/CTF.html">
+            
+                    
+                    CTF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../DOMAIN/Domain.html">
+            
+                <a href="../DOMAIN/Domain.html">
+            
+                    
+                    域渗透
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../HW/HW.html">
+            
+                <a href="../HW/HW.html">
+            
+                    
+                    红蓝攻防
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../HW/RedTeam.html">
+            
+                <a href="../HW/RedTeam.html">
+            
+                    
+                    红队技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../HW/Blueteam.html">
+            
+                <a href="../HW/Blueteam.html">
+            
+                    
+                    蓝队技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Nday/Nday.html">
+            
+                <a href="../Nday/Nday.html">
+            
+                    
+                    Nday漏洞利用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" >
+            
+                <span>
+            
+                    
+                    Linux提权
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1.1" data-path="../Nday/dirtycow.html">
+            
+                <a href="../Nday/dirtycow.html">
+            
+                    
+                    脏牛漏洞
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Legal/Legal.html">
+            
+                <a href="../Legal/Legal.html">
+            
+                    
+                    隐私保护-数据安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Legal/OwnerSec.html">
+            
+                <a href="../Legal/OwnerSec.html">
+            
+                    
+                    甲方安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Legal/operation.html">
+            
+                <a href="../Legal/operation.html">
+            
+                    
+                    安全运营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../Legal/manage.html">
+            
+                <a href="../Legal/manage.html">
+            
+                    
+                    安全管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../Legal/SecDevops.html">
+            
+                <a href="../Legal/SecDevops.html">
+            
+                    
+                    安全研发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >破解010Editor</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#nop&#x521D;&#x8BD5;-&#x7834;&#x89E3;010editor"><b></b>NOP&#x521D;&#x8BD5;-&#x7834;&#x89E3;010Editor</a></li><ul><li><span class="title-icon "></span><a href="#&#x7834;&#x89E3;&#x8FC7;&#x7A0B;"><b></b>&#x7834;&#x89E3;&#x8FC7;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#&#x77E5;&#x8BC6;&#x70B9;"><b></b>&#x77E5;&#x8BC6;&#x70B9;</a></li></ul></ul></div><a href="#nop&#x521D;&#x8BD5;-&#x7834;&#x89E3;010editor" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="nop&#x521D;&#x8BD5;-&#x7834;&#x89E3;010editor"><a name="nop&#x521D;&#x8BD5;-&#x7834;&#x89E3;010editor" class="anchor-navigation-ex-anchor" href="#nop&#x521D;&#x8BD5;-&#x7834;&#x89E3;010editor"><i class="fa fa-link" aria-hidden="true"></i></a><a name="nop&#x521D;&#x8BD5;-&#x7834;&#x89E3;010editor" class="plugin-anchor" href="#nop&#x521D;&#x8BD5;-&#x7834;&#x89E3;010editor"><i class="fa fa-link" aria-hidden="true"></i></a>NOP&#x521D;&#x8BD5;-&#x7834;&#x89E3;010Editor</h1>
+<p>&#x672C;&#x7AE0;&#x8282;&#x4ECB;&#x7ECD;&#x4F7F;&#x7528;NOP&#x6307;&#x4EE4;&#x6765;&#x7834;&#x89E3;010Editor&#x8F6F;&#x4EF6;&#x7684;&#x529E;&#x6CD5;&#xFF0C;&#x53EA;&#x7528;&#x4E8E;&#x8F6F;&#x4EF6;&#x9006;&#x5411;&#x7814;&#x7A76;&#xFF0C;&#x4E0D;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x5546;&#x4E1A;&#x7528;&#x9014;&#x3002;</p>
+<blockquote>
+<p>&#x672A;&#x7ECF;&#x6388;&#x6743;&#x8BF7;&#x52FF;&#x5229;&#x7528;&#x6587;&#x7AE0;&#x4E2D;&#x7684;&#x6280;&#x672F;&#x8D44;&#x6599;&#x5BF9;&#x4EFB;&#x4F55;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x8F6F;&#x4EF6;&#x8FDB;&#x884C;&#x5165;&#x4FB5;&#x64CD;&#x4F5C;&#xFF0C;&#x5229;&#x7528;&#x6B64;&#x6587;&#x7AE0;&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x4FE1;&#x606F;&#x800C;&#x9020;&#x6210;&#x7684;&#x76F4;&#x63A5;&#x6216;&#x95F4;&#x63A5;&#x540E;&#x679C;&#x548C;&#x635F;&#x5931;&#xFF0C;&#x5747;&#x7531;&#x4F7F;&#x7528;&#x8005;&#x672C;&#x4EBA;&#x8D1F;&#x8D23;&#x3002;</p>
+</blockquote>
+<h2 id="&#x7834;&#x89E3;&#x8FC7;&#x7A0B;"><a name="&#x7834;&#x89E3;&#x8FC7;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x7834;&#x89E3;&#x8FC7;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7834;&#x89E3;&#x8FC7;&#x7A0B;" class="plugin-anchor" href="#&#x7834;&#x89E3;&#x8FC7;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7834;&#x89E3;&#x8FC7;&#x7A0B;</h2>
+<ol>
+<li><p>&#x5BFB;&#x627E;&#x5207;&#x5165;&#x70B9;</p>
+<p>&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x5728;&#x672A;&#x6CE8;&#x518C;010Editor&#x65F6;&#xFF0C;&#x8F93;&#x5165;&#x968F;&#x610F;&#x7684;&#x4E00;&#x4E32;&#x6CE8;&#x518C;&#x5BC6;&#x7801;&#x4F1A;&#x5F15;&#x53D1;&#x62A5;&#x9519;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor028.png" alt=""></p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x6B64;&#x523B;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8FD9;&#x4E00;&#x62A5;&#x9519;&#x8BED;&#x53E5;&#x4F5C;&#x4E3A;&#x5207;&#x5165;&#x70B9;&#x6765;&#x67E5;&#x770B;&#x8F6F;&#x4EF6;&#x4E2D;&#x5173;&#x4E8E;&#x6CE8;&#x518C;&#x7801;&#x7684;&#x6821;&#x9A8C;&#x903B;&#x8F91;&#x3002;</p>
+</li>
+<li><p>&#x53CD;&#x6C47;&#x7F16;010Editor</p>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528;IDA&#x6253;&#x5F00;010Editor.exe&#xFF08;&#x8DEF;&#x5F84;&#xFF1A;010Editor64BitPortable\AppData&#xFF09;&#xFF0C;&#x67E5;&#x770B;&#x5185;&#x90E8;&#x7684;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#x3002;</p>
+<p><img src="G:\ired.team\Notes\img\Editor001.png" alt=""></p>
+<p>&#x9ED8;&#x8BA4;&#x9009;&#x62E9;pe64.dll&#x5E76;&#x70B9;&#x51FB;OK&#x8FDB;&#x5165;&#xFF0C;&#x5F85;IDA&#x9488;&#x5BF9;exe&#x7A0B;&#x5E8F;&#x5206;&#x6790;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x9009;&#x4E2D;Search-&gt;TExt search&#x529F;&#x80FD;&#xFF0C;&#x641C;&#x7D22;&#x4E0A;&#x6587;&#x4E2D;&#x6211;&#x4EEC;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x62A5;&#x9519;&#x5173;&#x952E;&#x5B57;&#x201C;Invalid name&#x201D;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor002.png" alt=""></p>
+</li>
+<li><p>&#x627E;&#x5230;&#x4EE3;&#x7801;&#x903B;&#x8F91;</p>
+<p>&#x9009;&#x62E9;&#x8FDB;&#x5165;&#x641C;&#x7D22;&#x51FA;&#x7684;&#x4EE3;&#x7801;&#x4F4D;&#x7F6E;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor003.png" alt=""></p>
+<p>&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8FDB;&#x5165;&#x5230;&#x4E86;&#x6CE8;&#x518C;&#x7801;&#x7684;&#x5224;&#x5B9A;&#x6A21;&#x5757;&#xFF0C;&#x6211;&#x4EEC;&#x5411;&#x4E0A;&#x5411;&#x4E0B;&#x6D4F;&#x89C8;&#x4E00;&#x4E0B;&#x6574;&#x4E2A;&#x51FD;&#x6570;&#xFF08;&#x82E5;&#x6CA1;&#x6709;&#x8FDB;&#x5165;&#x5230;&#x4E0B;&#x56FE;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x6309;F5&#x8BA9;IDA&#x81EA;&#x52A8;&#x5C55;&#x793A;&#x4F2A;&#x4EE3;&#x7801;&#xFF09;</p>
+<p><img src="G:\ired.team\Notes\img\Editor004.png" alt=""></p>
+<p>&#x5728;&#x6D4F;&#x89C8;&#x6574;&#x4E2A;&#x4F2A;&#x4EE3;&#x7801;&#x6A21;&#x5757;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x5F53;v17==219&#x65F6;&#xFF0C;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#x4F1A;&#x8D70;&#x5230;&#x6210;&#x529F;&#x6CE8;&#x518C;&#x7684;&#x7ED3;&#x679C;&#x4E0A;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor005.png" alt=""></p>
+<p>&#x800C;v17&#x6765;&#x81EA;&#x4E8E;&#x4E0A;&#x65B9;&#x7684;sub_1400084F4&#x51FD;&#x6570;&#xFF0C;&#x4E14;219&#x5BF9;&#x5E94;&#x7684;16&#x8FDB;&#x5236;&#x4E3A;0xDB&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8BA9;v17&#x6052;&#x7B49;&#x4E8E;0xDB&#xFF0C;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x4E0D;&#x7BA1;&#x8F93;&#x4EC0;&#x4E48;&#x6CE8;&#x518C;&#x7801;&#x90FD;&#x80FD;&#x591F;&#x6CE8;&#x518C;&#x6210;&#x529F;&#xFF1F;</p>
+<p><img src="G:\ired.team\Notes\img\Editor006.png" alt=""></p>
+<p><img src="G:\ired.team\Notes\img\Editor007.png" alt=""></p>
+<p>&#x5E26;&#x7740;&#x4E0A;&#x65B9;&#x7684;&#x60F3;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x8FFD;&#x8E2A;&#x4E00;&#x4E0B;v17&#x662F;&#x600E;&#x4E48;&#x751F;&#x6210;&#x7684;&#xFF08;&#x53CC;&#x51FB;&#x5BF9;&#x5E94;&#x7684;&#x51FD;&#x6570;&#xFF09;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor008.png" alt=""></p>
+<p>&#x7EE7;&#x7EED;&#x8FFD;&#x8E2A;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;v17&#x6765;&#x81EA;&#x4E8E;sub_14034AD70&#x51FD;&#x6570;&#x4E2D;&#x7684;result&#xFF0C;&#x90A3;&#x4E48;&#x73B0;&#x5728;&#x95EE;&#x9898;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x5982;&#x4F55;&#x4F7F;result&#x7684;&#x503C;&#x6052;&#x4E3A;0xDB</p>
+<p><img src="G:\ired.team\Notes\img\Editor009.png" alt=""></p>
+</li>
+<li><p>&#x4FEE;&#x6539;&#x76EE;&#x6807;&#x51FD;&#x6570;</p>
+<p>&#x9009;&#x4E2D;result&#x53C2;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x5207;&#x6362;&#x5230;IDA View-A&#x89C6;&#x56FE;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x8BE5;&#x884C;&#x4F2A;&#x4EE3;&#x7801;&#x5BF9;&#x5E94;&#x7684;&#x6C47;&#x7F16;&#x64CD;&#x4F5C;&#x903B;&#x8F91;&#x4F1A;&#x88AB;&#x7EFF;&#x8272;&#x5E95;&#x8272;&#x6807;&#x6CE8;&#x51FA;&#x6765;</p>
+<p><img src="G:\ired.team\Notes\img\Editor010.png" alt=""></p>
+<p><img src="G:\ired.team\Notes\img\Editor011.png" alt=""></p>
+<p>&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x53F3;&#x4E0B;&#x89D2;&#x6709;&#x4E2A;0xDB&#x88AB;&#x653E;&#x5230;&#x4E86;eax&#x4E2D;&#x4E86;&#xFF0C;&#x5408;&#x7406;&#x731C;&#x6D4B;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x5206;&#x652F;&#x5C31;&#x662F;&#x6210;&#x529F;&#x5206;&#x652F;&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x7684;result&#x503C;&#x4F1A;&#x5148;&#x5B58;&#x653E;&#x5728;eax&#x4E2D;&#x3002;</p>
+<p><img src="G:\ired.team\Notes\img\Editor012.png" alt=""></p>
+<p><img src="G:\ired.team\Notes\img\Editor013.png" alt=""></p>
+<p>&#x90A3;&#x4E48;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x8981;&#x4F7F;&#x5F97;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6052;&#x8FD4;&#x56DE;0xDB&#x5C31;&#x662F;&#x4F7F;&#x5F97;&#x51FD;&#x6570;&#x6700;&#x540E;&#x7684;&#x903B;&#x8F91;&#x662F;&#xFF1A;</p>
+<pre><code>mov eax 0DBh
+retn
+</code></pre><p>&#x4E3A;&#x4E86;&#x8FBE;&#x5230;&#x8FD9;&#x4E00;&#x76EE;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9700;&#x8981;&#x8BF7;&#x51FA;NOP&#x6307;&#x4EE4;&#xFF0C;&#x5C06;main&#x51FD;&#x6570;&#x6A21;&#x5757;&#x7684;&#x8DF3;&#x8F6C;&#x7ED9;&#x7F6E;&#x7A7A;&#xFF0C;&#x4F7F;&#x5F97;&#x8BE5;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x8D70;&#x5230;&#x8FD4;&#x56DE;result&#x7684;&#x903B;&#x8F91;&#x3002;&#x5148;&#x9009;&#x4E2D;</p>
+<pre><code>jz short loc_14034AD95
+</code></pre><p>&#x7136;&#x540E;&#x5728;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;Edit-&gt;Keypatch-&gt;Patcher&#x529F;&#x80FD;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor014.png" alt=""></p>
+<p>&#x5C06;jz&#x6307;&#x4EE4;&#x6539;&#x4E3A;nop&#x6307;&#x4EE4;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;Patch</p>
+<p><img src="G:\ired.team\Notes\img\Editor015.png" alt=""></p>
+<p>&#x5173;&#x95ED;&#x81EA;&#x52A8;&#x5F39;&#x51FA;&#x7684;&#x4E0B;&#x4E00;&#x6307;&#x4EE4;&#x4FEE;&#x6539;&#x7A97;&#x53E3;</p>
+<p><img src="G:\ired.team\Notes\img\Editor016.png" alt=""></p>
+<p>&#x68C0;&#x67E5;&#x5F53;&#x524D;&#x7684;&#x4EE3;&#x7801;&#x903B;&#x8F91;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x73B0;&#x5728;&#x6574;&#x4E2A;v17&#x7684;&#x751F;&#x6210;&#x51FD;&#x6570;&#x5DF2;&#x7ECF;&#x6CA1;&#x6709;&#x5206;&#x652F;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x53EA;&#x9700;&#x5B9E;&#x73B0;<code>mov eax 0DBh</code>&#xFF0C;&#x5373;&#x53EF;&#x8FBE;&#x5230;&#x76EE;&#x7684;&#x3002; </p>
+<p><img src="G:\ired.team\Notes\img\Editor017.png" alt=""></p>
+<p>&#x518D;&#x6B21;&#x6253;&#x5F00;Patcher&#x5DE5;&#x5177;&#xFF0C;&#x5C06;&#x6B64;&#x5904;&#x7684;eax&#x503C;&#x6539;&#x4E3A;0DBx&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor018.png" alt=""></p>
+<p><img src="G:\ired.team\Notes\img\Editor019.png" alt=""></p>
+<p>&#x6B64;&#x65F6;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4E86;&#x6574;&#x4F53;&#x4EE3;&#x7801;&#x7684;&#x7834;&#x89E3;&#x3002;</p>
+</li>
+<li><p>&#x6253;&#x5305;&#x8865;&#x4E01;</p>
+<p>&#x5728;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;Edit-&gt;Patch program-&gt;Apply patches to input file&#x5DE5;&#x5177;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor020.png" alt=""></p>
+<p>&#x6309;&#x7167;&#x9ED8;&#x8BA4;&#x503C;&#x70B9;&#x51FB;OK&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor021.png" alt=""></p>
+<p>&#x5B8C;&#x6210;&#x8865;&#x4E01;&#x5E94;&#x7528;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor022.png" alt=""></p>
+<p>&#x9000;&#x51FA;IDA&#xFF0C;&#x8BB0;&#x5F97;&#x9009;&#x62E9;&#x548C;&#x4E0B;&#x56FE;&#x4E00;&#x6837;&#x7684;&#x9009;&#x9879;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor023.png" alt=""></p>
+</li>
+<li><p>&#x6700;&#x540E;&#x4E00;&#x6B65;&#xFF1A;&#x5B9E;&#x73B0;&#x4EFB;&#x610F;&#x6CE8;&#x518C;</p>
+<p>&#x6253;&#x5F00;010Editor.exe&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor024.png" alt=""></p>
+<p>&#x8FDB;&#x5165;Help-&gt;about&#x9875;&#x9762;&#xFF0C;&#x9009;&#x4E2D;Redister&#x6309;&#x94AE;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor025.png" alt=""></p>
+<p>&#x586B;&#x5145;&#x4EFB;&#x610F;&#x503C;&#x8FDB;&#x884C;&#x6CE8;&#x518C;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor026.png" alt=""></p>
+<p>&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x6700;&#x7EC8;&#x6210;&#x529F;&#x6CE8;&#x518C;&#xFF1A;</p>
+<p><img src="G:\ired.team\Notes\img\Editor027.png" alt=""></p>
+</li>
+</ol>
+<h2 id="&#x77E5;&#x8BC6;&#x70B9;"><a name="&#x77E5;&#x8BC6;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x77E5;&#x8BC6;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x77E5;&#x8BC6;&#x70B9;" class="plugin-anchor" href="#&#x77E5;&#x8BC6;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x77E5;&#x8BC6;&#x70B9;</h2>
+<p>1&#x3001;Nop&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8DF3;&#x8FC7;&#x5173;&#x952E;&#x5224;&#x5B9A;&#xFF0C;&#x4F7F;&#x5F97;&#x6821;&#x9A8C;&#x65E0;&#x6548;&#x5316;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="IDA.html" class="navigation navigation-prev " aria-label="Previous page: 逆向">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Cloud/CloudSec.html" class="navigation navigation-next " aria-label="Next page: 云原生安全">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"破解010Editor","level":"1.5.1","depth":2,"next":{"title":"云原生安全","level":"1.6","depth":1,"path":"Cloud/CloudSec.md","ref":"Cloud/CloudSec.md","articles":[{"title":"容器逃逸","level":"1.6.1","depth":2,"path":"Cloud/PODSec.md","ref":"Cloud/PODSec.md","articles":[]}]},"previous":{"title":"逆向","level":"1.5","depth":1,"path":"IDA/IDA.md","ref":"IDA/IDA.md","articles":[{"title":"破解010Editor","level":"1.5.1","depth":2,"path":"IDA/010Editor.md","ref":"IDA/010Editor.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","chapter-fold","github","github-buttons","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/sityck"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"Takio","repo":"Blog","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Takio","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Takio‘s Blog","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"IDA/010Editor.md","mtime":"2022-08-27T06:09:11.390Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-27T06:10:06.868Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
