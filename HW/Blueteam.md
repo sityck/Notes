@@ -16,17 +16,17 @@
 
    首先进入用户仓库中的任意一个commit：
 
-   ![](G:\ired.team\Notes\img\Blueteam001.png)
+   ![](https://takiobuff.oss-cn-hongkong.aliyuncs.com/image/Blueteam001.png)
 
    然后在进入后的页面URL后追加`.patch`，再次跳转后即可获取本次commit提交的用户邮箱：
 
-   ![](G:\ired.team\Notes\img\Blueteam002.png)
+   ![](https://takiobuff.oss-cn-hongkong.aliyuncs.com/image/Blueteam002.png)
 
 2. git log日志
 
    首先将需要溯源的github仓库clone到本地，然后输入`git log`即可获取邮箱：
 
-   ![](G:\ired.team\Notes\img\Blueteam003.png)
+   ![](https://takiobuff.oss-cn-hongkong.aliyuncs.com/image/Blueteam003.png)
 
 3. Github-Email：
 
