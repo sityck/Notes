@@ -20,9 +20,44 @@ https://zhuanlan.zhihu.com/p/320579411
 
 对于SQL注入，当前JAVA工程的防御手段都是通过预编译的办法进行防御，并且基本实现了基于预编译编码要求的代码安全扫描能力，能够实现SQL注入的自动化代码扫描。但是有一类属性值（order by、SQL关键字、表名库名等等）是无法被参数化的，无法直接依赖预编译进行防御。
 
-[参考文档]: https://www.cnblogs.com/lsdb/p/12084038.html	"SQL预编译中order by后为什么不能参数化"
+[SQL预编译中order by后为什么不能参数化](https://www.cnblogs.com/lsdb/p/12084038.html)
 
 ## 二、XSS注入
+
+https://www.jianshu.com/p/4fcb4b411a66
+
+> XSS注入通常来说分为存储型和反射型注入，通常来讲存储型的注入危害较大，基本对于会有数据在页面显示的接口都需要测试XSS注入。该类测试的关键点在于各种绕过手段，所以了解后台防御机制以及掌握较多的payload或者注入手段最为关键。
+
+### XSS注入TIPS
+
+1、[XSSpayload](https://www.jianshu.com/p/0cb3d4354c85)
+
+2、如何绕过Httponly？
+
+- [XST攻击](https://zhuanlan.zhihu.com/p/61990354)
+- 通过`<iframe>`标签嵌入一个远程域，完全撑开后，以覆盖原有的页面。
+- 通过js伪造登录表单，欺骗浏览器自动填入，由此获取浏览器记住的历史密码。
+- 跳转至自己的钓鱼页面
+
+## 三、XXE注入
+
+https://blog.csdn.net/weixin_44420143/article/details/118721145
+
+> XXE注入实际上是XML解析机制导致缺陷，通过解析外部实体或者构造特殊的XML文件来实现文件读取、命令执行、内网扫描、拒绝服务等目的。通常来讲现在的代码工程都不在使用XML作为数据传输载体，而若使用了XML的载体，则会禁用外部实体解析及DTD。并且现如今的代码安全扫描已基本能够覆盖XXE注入漏洞的扫描发现。
+>
+> 值得注意的是，除了网上列出的几种外部实体解析的利用渠道，XXE还可以注入XML炸弹实现拒绝服务攻击，该类的防护手段即禁用DTD能力。具体可参考微软文档：https://learn.microsoft.com/zh-cn/archive/msdn-magazine/2009/november/xml-denial-of-service-attacks-and-defenses。
+
+## 四、CSRF攻击
+
+https://zhuanlan.zhihu.com/p/398601816
+
+> 对于CSRF攻击，按照代码规范正确设计会话框架的系统基本不会再存在此类漏洞。一般重点关注那些只有cookie没有token辅助鉴权的系统。
+>
+> CSRF攻击的核心要点是伪造攻击，所以利用手段通常是诱导用户去点击我们产生的恶意链接，这个通常和钓鱼的手法类似，或者说可以结合起来进行。
+
+## 五、SSRF攻击
+
+https://cloud.tencent.com/developer/article/2103240
 
 
 
