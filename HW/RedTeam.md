@@ -16,4 +16,4 @@
 
 如何插入RLO字符？首先选择重命名目标文件，然后在输入框处右键鼠标，选择插入控制字符->RLO字符即可：
 
-![](G:\ired.team\Notes\img\Redteam001.png)
+![](https://takiobuff.oss-cn-hongkong.aliyuncs.com/image/Redteam001.png)

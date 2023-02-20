@@ -28,8 +28,8 @@
         },
         "github-buttons": {
             "buttons": [{
-                "user": "Takio",
-                "repo": "Blog",
+                "user": "sityck",
+                "repo": "Notes",
                 "type": "star",
                 "size": "small",
                 "count": true
