@@ -4,8 +4,11 @@
 * [JAVA代码审计](JAVACode/JavaCode.md)
 * [WEB安全](WEB/WEBSec.md)
   * [常见WEB漏洞索引](WEB/Top.md)
-
 * [APP安全](APP/APPSec.md)
+  * [微信小程序获取源码包](APP/wxGetCode.md)
+  * [微信小程序抓包](APP/wxGetHttp.md)
+  * [解决前端加密问题](APP/Decode.md)
+  
 * [逆向](IDA/IDA.md)
   * [破解010Editor](IDA/010Editor.md)
 * [云原生安全](Cloud/CloudSec.md)
