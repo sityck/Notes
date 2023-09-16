@@ -52,7 +52,7 @@
 
 可用攻击路径见下方图片，简单来讲就是通过恶意挂载使得我们使用容器内的root用户修改宿主机的root所属权限的文件，从而将普通用户提权至SUDO组（linux机器上的本地用户信息主要记录在`/etc/`目录下，比如两个常见文件`/etc/passwd`和`/etc/group`两个文件分别记录了用户基本属性与用户分组信息；此处便是把etc目录挂载到容器内了）：
 
-![](G:\ired.team\Notes\img\294874.jpg)
+![](https://takiobuff.oss-cn-hongkong.aliyuncs.com/image/294874.jpg)
 
 ## 组件安全
 
